@@ -11,12 +11,12 @@ conn = psycopg2.connect(
 cursor = conn.cursor()
 
 
-cursor.execute('''INSERT INTO EMPLOYEE(FIRST_NAME, LAST_NAME, AGE, SEX,
-   INCOME) VALUES ('Ramya', 'Rama priya', 27, 'F', 9000)''')
+cursor.execute('''INSERT INTO EMPLOYEE(FIRST_NAME, LAST_NAME, AGE, SEX,INCOME) 
+                               VALUES ('mahmoud', 'ahmed', 27, 'M', 9000)''')
 
 
-cursor.execute('''INSERT INTO EMPLOYEE(FIRST_NAME, LAST_NAME, AGE, SEX,
-   INCOME) VALUES ('Sarmista', 'Sharma', 26, 'F', 10000)''')
+cursor.execute('''INSERT INTO EMPLOYEE(FIRST_NAME, LAST_NAME, AGE, SEX,INCOME) 
+                               VALUES ('Aya', 'Mohamed', 26, 'F', 10000)''')
 
 conn.commit()
 conn.close()
