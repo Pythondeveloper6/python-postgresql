@@ -18,7 +18,7 @@ result = cursor.fetchone();
 print(result)
 
 
-#Fetching 1st row from the table
+#Fetching all rows from the table
 result = cursor.fetchall();
 print(result)
 
